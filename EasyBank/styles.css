@@ -267,6 +267,22 @@ h5 {
     padding-left: 10px;
 }
 
+.card-content h5:hover {
+    color: var(--LIME-GREEN);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--DARK-BLUE);
+    height: 200px;
+}
+
+.footer {
+    width: min(100% - 10vw, 1200px);
+    margin-inline: auto;
+}
+
 @media screen and (max-width: 768px) {
     .overlay {
         height: 100%;
@@ -491,9 +507,15 @@ h5 {
         display: block;
     }
 
+    .cards {
+        gap: 1rem;
+    }
     .section-content {
         margin-top: -10% !important;
         margin-left: 7% !important;
+    }
+    .card-content h5 {
+        margin-top: .5rem;
     }
 }
 
