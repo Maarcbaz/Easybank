@@ -207,6 +207,7 @@ img {
 .abouts {
     margin-top: 2rem;
     display: flex;
+    padding-bottom: 1.7rem;
     gap: 1.5rem;
 }
 
@@ -224,6 +225,39 @@ img {
 
 h5 {
     font-weight: 400;
+}
+
+/* SECTION 3  */
+/* CARDS  */
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    width: min(100% - 10vw, 1200px);
+    margin-inline: auto;
+}
+
+.card {}
+
+.card p {
+    text-transform: capitalize;
+}
+
+.card h5 {
+    font-weight: 400;
+}
+
+.card img {
+    border-radius: 7px;
+}
+
+.card h1 {
+    font-weight: 590;
+    font-size: 1.2rem;
+}
+
+.card-content {
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -300,6 +334,16 @@ h5 {
 
     .section-1 {
         flex-direction: column-reverse;
+    }
+
+
+    .cards {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: min(100% - 40vw);
+        margin-inline: auto;
+        margin-top: 3rem;
     }
 
 
@@ -418,16 +462,27 @@ h5 {
         align-items: center;
     }
 
+    /* CARDS  */
+    .cards {
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        width: min(100% - 10vw) !important;
+        margin-inline: auto !important;
+    }
+
 }
+
 @media screen and (min-width: 800px) and (max-width: 1200px) {
     .wr {
         display: block;
     }
+
     .section-content {
         margin-top: -10% !important;
         margin-left: 7% !important;
     }
 }
+
 @media screen and (min-width: 1500px) {
     .introbg {
         position: inherit;
