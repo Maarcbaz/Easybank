@@ -237,7 +237,6 @@ h5 {
     margin-inline: auto;
 }
 
-.card {}
 
 .card p {
     text-transform: capitalize;
@@ -254,6 +253,14 @@ h5 {
 .card h1 {
     font-weight: 590;
     font-size: 1.2rem;
+}
+
+.article {
+    width: min(100% - 10vw, 1200px);
+    margin-inline: auto;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: capitalize;
 }
 
 .card-content {
@@ -298,6 +305,10 @@ h5 {
 
     .section-content {
         padding-bottom: 2rem;
+    }
+
+    .cards h1 {
+        font-weight: 600 !important;
     }
 
     .section-1 .wrap {
@@ -422,6 +433,9 @@ h5 {
         top: 10px;
         z-index: 1;
     }
+
+
+
 
 
     .section-content h4 span {
