@@ -156,25 +156,45 @@ img {
 
 .introbg {
     position: inherit;
-    top: -50px;
-    left: 200px;
+    top: -20px;
+    left: 180px;
 }
-
+.section-content h1 {
+    font-weight: 570;
+}
 .mobile {
     position: absolute;
     top: -90px;
     left: 230px;
     max-width: 80% !important;
 }
+.section-content h4 {
+    font-weight: 400;
+    opacity: .9;
+}
 
+/* SECTION 2  */
 .section-2 {
-    height: 200px;
     position: relative;
     z-index: -1;
-    top: -110px !important;
+    top: -90px !important;
     background-color: var(--LIGHT-GRAY);
+}
 
+.contents {
+    width: min(100% - 10vw, 1200px);
+    margin-inline: auto;
+}
 
+.content {
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+.content h4 {
+    font-weight: 400;
+}
+.content h1 {
+    font-weight: 570;
 }
 
 
@@ -205,15 +225,14 @@ img {
         text-align: center;
     }
 
-
+    .section-content {
+        padding-bottom: 2rem;
+    }
 
     .section-1 .wrap {
         display: inline;
     }
 
-    .wrap__1 {
-        display: inline;
-    }
 
     .phone__img {
         display: block;
@@ -226,7 +245,18 @@ img {
         margin-top: 30px;
     }
 
-
+    .content h1 {
+        text-align: center;
+    }
+    .content {
+        padding-left: 0;
+    }
+    .content h4 {
+        text-align: center;
+    }
+    .content span {
+        display: inline;
+    }
     .section-1 {
         flex-direction: column-reverse;
     }
@@ -253,6 +283,13 @@ img {
         left: 10%;
     }
 
+        .section-2 {
+            position: relative;
+            z-index: -1;
+            height: auto;
+            top: 0 !important;
+            background-color: var(--LIGHT-GRAY);
+        }
 
 
     .overlay a {
@@ -263,7 +300,14 @@ img {
         transition: 0.3s;
     }
 
+    .section-content h1 {
+        text-align: center;
+    }
 
+  
+    h1 span {
+        display: inline !important;
+    }
 
     .overlay a:hover,
     .overlay a:focus {
@@ -293,6 +337,9 @@ img {
         top: 10px;
         z-index: 1;
     }
+        .section-content h4 span {
+            text-align: center !important;
+        }
 }
 
 @media screen and (max-width: 560px) {
