@@ -272,15 +272,79 @@ h5 {
     cursor: pointer;
 }
 
+
 footer {
-    margin-top: 3rem;
-    background-color: var(--DARK-BLUE);
-    height: 200px;
+    background-color: #000;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.3rem;
 }
 
 .footer {
     width: min(100% - 10vw, 1200px);
     margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.btngr p {
+    font-size: 1rem;
+    color: var(--WHITE);
+}
+
+.btngr .btn {
+    width: 65%;
+}
+
+.footer__content__1 img {
+    margin-bottom: 2rem;
+    padding-left: .8rem;
+}
+
+.footer__content__1 a {
+    padding-left: .7rem;
+    font-size: 1.3rem !important;
+}
+
+.footer a {
+    font-size: .8rem;
+    color: var(--WHITE);
+    text-decoration: none;
+
+}
+
+.footer-1 {
+    display: flex;
+    gap: 12rem;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between !important;
+}
+
+.footer h5 {
+    color: var(--WHITE);
+    margin-bottom: -1px;
+    font-size: 1.1rem;
+}
+
+.abot,
+.career {
+    margin-top: -3.5rem;
+}
+
+.abot a,
+.career a {
+    padding-top: .5rem;
+    display: block;
+}
+
+
+
+.footer a:hover {
+    color: var(--LIME-GREEN);
 }
 
 @media screen and (max-width: 768px) {
@@ -450,12 +514,30 @@ footer {
         z-index: 1;
     }
 
-
-
-
-
     .section-content h4 span {
         text-align: center !important;
+    }
+
+    .footer-1 {
+        gap: 4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btngr {
+        margin-top: 2rem;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .btngr .btn {
+        width: 60%;
     }
 }
 
@@ -500,6 +582,10 @@ footer {
         margin-inline: auto !important;
     }
 
+    .btngr .btn {
+        width: 70%;
+    }
+
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
@@ -510,10 +596,12 @@ footer {
     .cards {
         gap: 1rem;
     }
+
     .section-content {
         margin-top: -10% !important;
         margin-left: 7% !important;
     }
+
     .card-content h5 {
         margin-top: .5rem;
     }
