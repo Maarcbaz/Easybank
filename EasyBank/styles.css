@@ -277,6 +277,7 @@ footer {
     background-color: #000;
     margin-top: 2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 1.3rem;
 }
@@ -537,8 +538,9 @@ footer {
     }
 
     .btngr .btn {
-        width: 60%;
+        width: 65%;
     }
+
 }
 
 @media screen and (max-width: 560px) {
@@ -583,7 +585,7 @@ footer {
     }
 
     .btngr .btn {
-        width: 70%;
+        width: 65% !important;
     }
 
 }
