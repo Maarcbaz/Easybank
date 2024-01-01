@@ -70,6 +70,7 @@ img {
     background-color: var(--WHITE);
     height: 40px;
     align-items: center;
+    padding-top: 4px;
     width: min(100% - 10vw, 1200px);
     margin-inline: auto;
 }
